@@ -1,0 +1,13 @@
+{
+  "name": "DevAlert",
+  "version": "1.0",
+  "description": "Turns literally everything red.",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://*.exactestate.com/*", "https://*.exactestate.com/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "manifest_version": 2
+}
